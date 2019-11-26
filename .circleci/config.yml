@@ -19,7 +19,7 @@ jobs:
       - run: apt install -y libpcre2-dev libssl-dev make git
       - checkout
       - run:
-          make ssl=1.1.x config=debug clean test examples && make ssl=0.9.0 config=release clean test examples
+          make ssl=1.1.x config=debug clean test examples && make ssl=1.1.x config=release clean test examples
 
 workflows:
   version: 2
